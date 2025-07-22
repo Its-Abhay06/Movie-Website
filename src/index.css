@@ -3,6 +3,7 @@
 
 @import "tailwindcss";
 
+
 @theme {
   --color-primary: #030014;
 
@@ -159,4 +160,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+}
+header img{
+  margin-top: 0px;
 }
