@@ -3,8 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
+// 👉 ADD THIS IMPORT
+import ConfigGuard from './components/ConfigGuard.jsx'
+
 createRoot(document.getElementById('root')).render(
-  <ConfigGuard>
-    <App />
-  </ConfigGuard>
+  <StrictMode>
+    <ConfigGuard>
+      <App />
+    </ConfigGuard>
+  </StrictMode>
 )
